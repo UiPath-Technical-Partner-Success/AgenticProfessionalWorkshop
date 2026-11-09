@@ -12,8 +12,8 @@ base path, repo, training environment, contact address, product names. **Never i
 URL, a contact address, or a site URL — read it from there.** When a value appears wrong or
 missing, fix `CourseProfile.md` and propagate, rather than hardcoding it at the call site.
 
-**Live site:** https://uipath-practice.github.io/AgenticCodingAgents/
-**Source repo:** https://github.com/uipath-practice/AgenticCodingAgents
+**Live site:** https://uipath-technical-partner-success.github.io/AgenticProfessionalWorkshop/
+**Source repo:** https://github.com/UiPath-Technical-Partner-Success/AgenticProfessionalWorkshop
 **Theme:** MkDocs Material (`mkdocs.yml`)
 **Deploy:** GitHub Actions on every push to `main` (`.github/workflows/deploy.yml`)
 

@@ -9,9 +9,9 @@ bottom. Never invent a tenant URL, contact address, or site URL — read it from
 | `COURSE_TITLE` | Agentic Automation Workshop |
 | `COURSE_DESCRIPTION` | Participant's handbook for the UiPath Agentic Automation Workshop — build an end-to-end agentic Benefit Claims process. |
 | `SITE_AUTHOR` | Mihai Iorga |
-| `SITE_URL` | `https://uipath-practice.github.io/AgenticCodingAgents/` |
-| `BASE_PATH` | `/AgenticCodingAgents` |
-| `REPO_URL` | `https://github.com/uipath-practice/AgenticCodingAgents` |
+| `SITE_URL` | `https://uipath-technical-partner-success.github.io/AgenticProfessionalWorkshop/` |
+| `BASE_PATH` | `/AgenticProfessionalWorkshop` |
+| `REPO_URL` | `https://github.com/UiPath-Technical-Partner-Success/AgenticProfessionalWorkshop` |
 | `DEFAULT_BRANCH` | `main` |
 | `TRAINING_PLATFORM_URL` | `https://cloud.uipath.com/tpenlabs` |
 | `TRAINING_TENANT` | `AgenticWorkshop` |
@@ -36,8 +36,8 @@ Run each grep; every hit must be either updated to this table's values or delibe
 ```bash
 # 1. No previous course's URL, repo, or tenant survives anywhere.
 #    Update this pattern per course: it must list the PREVIOUS course's values, never this one's.
-#    (`tpenlabs` and `uipath-practice` are THIS course's correct values -- do not add them here.)
-grep -rn 'AgenticPracticeCourse\|AgenticPractice\b' . --exclude-dir=.git --exclude-dir=Archive
+#    (`tpenlabs` is THIS course's correct value -- do not add it here.)
+grep -rn 'AgenticCodingAgents\|AgenticProfessionalCourse\|uipath-practice' . --exclude-dir=.git --exclude-dir=Archive
 
 # 2. No absolute machine paths (the mkdocs binary was hardcoded in the original)
 grep -rn '/Users/' . --exclude-dir=.git --exclude-dir=site
